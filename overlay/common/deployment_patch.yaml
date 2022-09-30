@@ -10,6 +10,8 @@ spec:
     spec:
       containers:
         - name: traefik
+          imagePullPolicy: Always
+
           # Include Traefik environment configuration. Note that static
           # configuration providers are mutually exclusive: we cannot use both
           # command line options and environment variables.
