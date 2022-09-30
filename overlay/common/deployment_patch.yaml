@@ -27,6 +27,9 @@ spec:
           volumeMounts:
             - name: traefik-certs
               mountPath: /certs
+            - name: traefik-certs
+              mountPath: /etc/ssl/certs/441ab690.0
+              subPath: root_ca.crt
           args: []
       volumes:
         - name: traefik-certs
