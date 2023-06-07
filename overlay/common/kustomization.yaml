@@ -13,6 +13,10 @@ resources:
 
 patches:
   - path: deployment_patch.yaml
+    target:
+      kind: Deployment
+      name: traefik
+      namespace: traefik-ingress
   - target:
       kind: Service
       name: traefik
